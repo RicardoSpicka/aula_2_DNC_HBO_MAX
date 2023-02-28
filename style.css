@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(0, 0, 0, 1);
+}
+
+#header{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+}
+
+#logo{
+text-align: center;
+}
+
+#lista1 {
+    display: flex;
+}
+
+#lista1 i{
+    color: white;
+    width: 100px;
+    font-size: 30px;
+}
+
+#nave{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nave a{
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: 400;
+    color: white;
+    
+}
+
+#content{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#content h1{
+    font-size: 54px;
+    font-weight: 700;
+}
+
+#content h{
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label{
+    font-size: 33px;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+}
+
+.form-group input{
+    font-size: 33px;
+    font-weight: 400;
+    text-align: left;
+    background: rgba(127, 127, 127, 0.75);
+    border-radius: 25px;
+    padding-left: 30px;
+    color: white;
+}
+
+    .form-group input::placeholder{
+        font-size: 33px;
+        font-weight: 400;
+        color: white;
+        padding-left: 30px;
+    }
+
+    .login input[type="submit"]{
+        width: 350px;
+        margin-top: 40px;
+        font-size: 29px;
+        font-weight: 400;
+        background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+    }    
+
+button{
+width: 350px;
+font-size: 29px;
+font-weight: 400;
+background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 25px;
+}
+
+@media only screen and (max-width: 400px) {
+
+    body{
+        width: 100%;
+        margin-left: 3%;
+        background-size: auto;
+        background-position: center center;
+    }
+
+    #header{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-around;
+    }
+
+    #lista1 {
+        padding: 20px;
+        text-align: left;
+        width: 320px;
+    }
+    
+    #lista1 i{
+        width: 100px;
+        font-size: 20px;
+    }
+
+    #nave{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    #nave a{
+        font-size: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #logo{
+        padding: 20px;
+    }
+
+    #content{
+        margin-top: 20px;
+    }
+    
+    #content h1{
+        font-size: 44px;
+    }
+    
+    #content h2{
+        font-size: 19px;
+    }
+
+    .form-group label{
+        font-size: 28px;
+    }
+    
+    .form-group input{
+        font-size: 23px;
+    }
+    
+        .form-group input::placeholder{
+            font-size: 23px;
+            padding-left: 30px;
+        }
+    
+        .login input[type="submit"]{
+            width: 300px;
+            margin-top: 40px;
+            font-size: 24px;
+        }  
+
+        button{
+            font-size: 24px;
+            width: 300px;
+        }
+
+}
